@@ -1,15 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+.home-body {
+    font-family: 'Roboto mono', monospace;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+a {
+    text-decoration: none;
+    display:inline;
+    color: black;
+    cursor: pointer;
+}
 /*Header*/
 header {
     width: 100%;
-    height: 140px;
+    height: 40px;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
 header .header-icons-container {
     width: 100%;
-    height: 50px;
+    height: 100px;
     display: grid;
-    background-color: #47cfac;
+    background-color: #f8e800;
 }
 header .header-icons-container .icons {
     width: 300px;
@@ -21,7 +42,21 @@ header .header-icons-container .icons {
     justify-self: end;
     margin-right: 50px;
 }
-header .icons span {
-    color: white;
+header .icons  img {
+    color: rgb(255, 255, 255);
 }
-/*    */
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+nav .nav-logo-container {
+    margin-left: 50px;
+    margin-top: 0px;
+}
+nav .nav-logo-container img {
+    color: white;
+    width: 220px;
+    margin-top: -158px;
+}
+/*   */
