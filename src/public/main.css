@@ -2,8 +2,9 @@
 
 body {
     font-family: 'Roboto mono', monospace;
-    margin: 0;
-    padding: 0;
+    position: relative;
+    padding-bottom: 5em;
+    min-height: 100vh;
 }
 .home-body {
     font-family: 'Roboto mono', monospace;
@@ -60,8 +61,10 @@ header .icons  img {
 /* Main  */
 .main-container {
     margin-left: 10px;
+    min-height: calc(100vh - 100px -300px);
 }
 .main-container h1 {
+    letter-spacing: 0.2em;
     display: block;
     text-align: left;
     width: 100%;
@@ -79,13 +82,12 @@ footer {
     background-color: #f8e800;
     border-top: 10px solid #000000;
     text-align: center;
-}
-.footer-container {
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
 }
 footer p {
+    background-color: #f8e800;
     color: black;
     margin-top: 10px;
 }
