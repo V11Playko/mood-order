@@ -19,6 +19,10 @@ a {
     color: black;
     cursor: pointer;
 }
+.grid-container{
+    max-width: 980px;
+    margin: auto;
+}
 /*Header*/
 
 /*Iconos*/
@@ -60,24 +64,19 @@ header .icons  img {
 }
 .main-container h1 {
     display: block;
-    align-content: center;
-    text-align: center;
+    text-align: left;
     width: 100%;
     margin-top: 70px;
+    margin-left: 20px;
 }
-.p-content {
-    color: #332f2f;
-}
-.p-content input {
-    border-radius: 10px;
-    width: 170px;
-    height: 30px;
+.p-content-1 {
+    color: #000000;
 }
 
 /*footer*/
 footer {
     width: 100%;
-    height: 110px;
+    height: 80px;
     background-color: #f8e800;
     border-top: 10px solid #000000;
     text-align: center;
