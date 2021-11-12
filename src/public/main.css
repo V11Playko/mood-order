@@ -20,7 +20,7 @@ a {
     cursor: pointer;
 }
 .grid-container{
-    max-width: 980px;
+    max-width: 61.25rem;
     margin: auto;
 }
 /*Header*/
@@ -28,26 +28,26 @@ a {
 /*Iconos*/
 header {
     width: 100%;
-    height: 40px;
+    height: 2.5rem;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
 header .header-icons-container {
     width: 100%;
-    height: 100px;
-    border-bottom: 1px solid #000000;
+    height: 6.25rem;
+    border-bottom: 0.063rem solid #000000;
     display: grid;
     background-color: #f8e800;
 }
 header .header-icons-container .icons {
-    width: 300px;
+    width: 18.75rem;
     height: auto;
     display: flex;
     justify-items: flex-end;
     align-items: center;
     justify-content: space-between;
     justify-self: end;
-    margin-right: 50px;
+    margin-right: 3.125rem;
 
 }
 header .icons  img {
@@ -55,21 +55,21 @@ header .icons  img {
 }
 /*Logo*/
 .header-icons-container .nav-logo-container img {
-    width: 250px;
-    margin-top: -120px;
+    width: 15.625rem;
+    margin-top: -7.5rem;
 }
 /* Main  */
 .main-container {
-    margin-left: 10px;
-    min-height: calc(100vh - 100px -300px);
+    margin-left: 0.625rem;
+    min-height: calc(100vh - 6.25rem - 18.75rem);
 }
 .main-container h1 {
-    letter-spacing: 0.2em;
+    letter-spacing: 0.2rem;
     display: block;
     text-align: left;
     width: 100%;
-    margin-top: 70px;
-    margin-left: 20px;
+    margin-top: 4.375rem;
+    margin-left: 1.25rem;
 }
 .p-content-1 {
     color: #000000;
@@ -78,7 +78,7 @@ header .icons  img {
 /*footer*/
 footer {
     width: 100%;
-    height: 80px;
+    height: 5rem;
     background-color: #f8e800;
     border-top: 10px solid #000000;
     text-align: center;
@@ -89,5 +89,5 @@ footer {
 footer p {
     background-color: #f8e800;
     color: black;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
