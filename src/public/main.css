@@ -73,6 +73,60 @@ header .icons  img {
 }
 .p-content-1 {
     color: #000000;
+    margin-bottom: 1rem;
+}
+/*main POST*/
+
+.blogs-main {
+    display: grid;
+}
+.blogs-news-container {
+    background-color: #e6e9ed;
+    padding: 0px 50px 40px ;
+}
+.blogs-main-new {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+.blogs-news-img-container {
+    grid-column: 1;
+}
+.blogs-news-img-container img {
+    width: 85%;
+}
+.blogs-news-info-container {
+    grid-column: 2;
+}
+.blogs-news-info-container p {
+    margin-bottom: 35px;
+}
+.blogs-posts-container {
+    padding: 0 50px 40px;
+}
+.blogs-posts-container h3 {
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 20px;
+    text-align: center;
+}
+/*boton generico*/
+.blogs-button {
+    border: 1px solid #47cfac;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+/*Para imagenes del post*/
+.blogs-posts-container .post-container {
+    display: inline-block;
+    padding-left: 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+.blogs-posts-container .post-container p {
+    margin-bottom: 35px;
+}
+.blogs-posts-container .post-container img {
+    width: 100%;
 }
 
 /*footer*/
