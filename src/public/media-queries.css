@@ -1,16 +1,16 @@
 @media (max-width: 900px) {
-    .blogs-main-new {
+    .moods-main-new {
         grid-template-columns: 1fr;
         grid-template-rows: 3fr;
     }
-    .blogs-news-img-container {
+    .moods-news-img-container {
         grid-row: 2;
     }
-    .blogs-news-info-container {
+    .moods-news-info-container {
         grid-column: 1;
         grid-row: 3;
     }
-    .blogs-posts-container .post-container {
+    .moods-posts-container .post-container {
         max-width: 45%;
     }
     .proyects-main-container {
@@ -22,7 +22,7 @@
     }
 }
 @media (max-width: 600px) {
-    .blogs-posts-container .post-container {
+    .moods-posts-container .post-container {
         max-width: 95%;
     }
 }
