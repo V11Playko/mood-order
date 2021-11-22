@@ -4,7 +4,8 @@
   "description": "A website that sends you motivational emails depending on the ones you choose.",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "path": "^0.12.7"
   },
   "scripts": {
     "dev": "nodemon src/index.js"

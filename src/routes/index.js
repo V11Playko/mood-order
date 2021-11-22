@@ -3,7 +3,7 @@ const router = Router();
 
 router.post('/send-email', (req, res) => {
     console.log(req.body);
-    res.send('Recibido');
+    res.send('received');
 });
 
 module.exports = router;
