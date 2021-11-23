@@ -106,7 +106,7 @@ header .icons  img {
 /*boton generico*/
 .moods-button {
     border: 1px solid #47cfac;
-    padding: 0.625rem 0.938rem;
+    padding: 0.625rem 2.5rem;
     font-size: 0.875rem;
 }
 /*Para imagenes del post*/
