@@ -6,13 +6,6 @@ body {
     padding-bottom: 5em;
     min-height: 100vh;
 }
-.home-body {
-    font-family: 'Roboto mono', monospace;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
 a {
     text-decoration: none;
     display:inline;
@@ -64,6 +57,7 @@ header .icons  img {
     min-height: calc(100vh - 6.25rem - 18.75rem);
 }
 .main-container h1 {
+    font-family: 'Roboto mono', monospace;
     letter-spacing: 0.2rem;
     display: block;
     text-align: left;
@@ -72,6 +66,7 @@ header .icons  img {
     margin-left: 1.25rem;
 }
 .p-content-1 {
+    font-family: 'Roboto mono', monospace;
     color: #000000;
     margin-bottom: 1rem;
 }
@@ -82,9 +77,7 @@ header .icons  img {
 }
 .moods-news-container {
     background-color: #e6e9ed;
-    padding: 0px 50px 40px ;
-}
-.moods-main-new {
+    padding: 0rem 3.125rem 2.5rem ;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr;
@@ -99,31 +92,33 @@ header .icons  img {
     grid-column: 2;
 }
 .moods-news-info-container p {
-    margin-bottom: 35px;
+    font-family: 'Roboto mono', monospace;
+    margin-bottom: 2.188rem;
 }
 .moods-posts-container {
-    padding: 0 50px 40px;
+    padding: 0rem 3.125rem 2.5rem;
 }
 .moods-posts-container h3 {
     border-bottom: 1px solid #cdd2da;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
     text-align: center;
 }
 /*boton generico*/
 .moods-button {
     border: 1px solid #47cfac;
-    padding: 10px 15px;
-    font-size: 14px;
+    padding: 0.625rem 0.938rem;
+    font-size: 0.875rem;
 }
 /*Para imagenes del post*/
 .moods-posts-container .post-container {
     display: inline-block;
-    padding-left: 10px;
+    padding-left: 0.625rem;
     max-width: 30%;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 .moods-posts-container .post-container p {
-    margin-bottom: 35px;
+    font-family: 'Roboto mono', monospace;
+    margin-bottom: 2.188rem;
 }
 .moods-posts-container .post-container img {
     width: 100%;
