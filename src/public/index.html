@@ -42,58 +42,58 @@
                         <p>El estado de ánimo es una actitud o disposición en la vida emocional. No es una situación emocional transitoria. Es un estado, una forma de permanecer, de estar, cuya duración es prolongada y destiñe sobre el resto del mundo psíquico.</p>
                     </div>
             </section>
-            <section class="moods-posts-container">
-                <div class="grid-container">   
-                    <h3>¿Cuál Quieres?</h3>
-                    <form action="/send-email" method="POST">
-                        <article class="post-container">
-                            <img src="/assets/img/mood-happy.jpeg" alt="Imagen de un mood-feliz">
-                                <p>Feliz</p>
-                                <p>Estado de ánimo de la persona que se siente plenamente satisfecha por gozar de lo que desea.</p>
-                            <input class="moods-button" href="#button-enviar" type="button" value="Seleccionar"></input>
-                        </article>
-                        <article class="post-container">
-                            <img src="/assets/img/mood-inseguridad.jpg" alt="Imagen de un mood-inseguridad">
-                                <p>Inseguridad</p>
-                                <p>La inseguridad emocional es una sensación de nerviosismo o temeridad asociado a multitud de contextos.</p>
-                            <input class="moods-button" href="#button-enviar" type="button" value="Seleccionar"></input>
-                        </article>
-                        <article class="post-container">
-                            <img src="/assets/img/mood-desamor.jpg" alt="Imagen de un mood-desamor">
-                                <p>Desamor</p>
-                                <p>El inmenso grado de tristeza y ansiedad que sufre una persona ante la ruptura de una relación amorosa.</p>
-                            <input class="moods-button" href="#button-enviar" type="button" value="Seleccionar"></input>
-                        </article>
-                        <article class="post-container">
-                            <img src="/assets/img/mood-sobrepensar.png" alt="Imagen de un mood-sobrepensar">
-                                <p>Sobrepensar</p>
-                                <p>Sobrepensar es uno de los principales males de nuestra generación, y es el factor culpable de que nos sintamos frustrados y cansados.</p>
-                            <input class="moods-button" href="#button-enviar" type="button" value="Seleccionar"></input>
-                        </article>
-                        <article class="post-container">
-                            <img src="/assets/img/mood-business.jpg" alt="Imagen sobre trabajo remoto">
-                                <p>Trabajo</p>
-                                <p>El estado animico que tienes en el trabajo o las emociones fugaces que tienes por diferentes circunstancias o trabajos realizados.</p>
-                            <input class="moods-button" href="#button-enviar" type="button" value="Seleccionar"></input>
-                        </article>
-                        <article class="post-container">
-                            <img src="/assets/img/proximamente.jpg" alt="Imagen sobre Programacion">
-                                <p>Programacion</p>
-                                <p> <br>
-                                    <br>
-                                Próximamente
-                                    <br>
-                                    <br>
-                                    <br>
-                                </p>
-                            <input class="moods-button" href="#button-enviar" type="button" value="Seleccionar"></input>
-                        </article>
-                    </form>
-                </div>
-            </section>
-            <button id="button-enviar" class="btn btn-primary btn-block">
-                Enviar
-            </button>
+            <form action="/send-email" method="POST">
+                <section class="moods-posts-container">
+                    <div class="grid-container">   
+                        <h3>¿Cuál Quieres?</h3>
+                            <article class="post-container">
+                                <img src="/assets/img/mood-happy.jpeg" alt="Imagen de un mood-feliz">
+                                    <p>Feliz</p>
+                                    <p>Estado de ánimo de la persona que se siente plenamente satisfecha por gozar de lo que desea o circunstancias.</p>
+                                <input name="pack-feliz" class="moods-input" type="button" value="Seleccionar"></input>
+                            </article>
+                            <article class="post-container">
+                                <img src="/assets/img/mood-inseguridad.jpg" alt="Imagen de un mood-inseguridad">
+                                    <p>Inseguridad</p>
+                                    <p>La inseguridad emocional es una sensación de nerviosismo o temeridad asociado a multitud de contextos.</p>
+                                <input name="pack-inseguridad" class="moods-input" type="button" value="Seleccionar"></input>
+                            </article>
+                            <article class="post-container">
+                                <img src="/assets/img/mood-desamor.jpg" alt="Imagen de un mood-desamor">
+                                    <p>Desamor</p>
+                                    <p>El inmenso grado de tristeza y ansiedad que sufre una persona ante la ruptura de una relación amorosa.</p>
+                                <input name="pack-desamor" class="moods-input"  type="button" value="Seleccionar"></input>
+                            </article>
+                            <article class="post-container">
+                                <img src="/assets/img/mood-sobrepensar.png" alt="Imagen de un mood-sobrepensar">
+                                    <p>Sobrepensar</p>
+                                    <p>Sobrepensar es uno de los principales males de nuestra generación, y es el factor culpable de que nos sintamos frustrados y cansados.</p>
+                                <input name="pack-sobrepensar" class="moods-input" type="button" value="Seleccionar"></input>
+                            </article>
+                            <article class="post-container">
+                                <img src="/assets/img/mood-business.jpg" alt="Imagen sobre trabajo remoto">
+                                    <p>Trabajo</p>
+                                    <p>El estado animico que tienes en el trabajo o las emociones fugaces que tienes por diferentes circunstancias o trabajos realizados.</p>
+                                <input name="pack-trabajo" class="moods-input" type="button" value="Seleccionar"></input>
+                            </article>
+                            <article class="post-container">
+                                <img src="/assets/img/proximamente.jpg" alt="Imagen sobre Programacion">
+                                    <p>Programacion</p>
+                                    <p> <br>
+                                        <br>
+                                    Próximamente
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </p>
+                                <input class="moods-input" type="button" value="Seleccionar"></input>
+                            </article>
+                    </div>
+                </section>
+                <button class="button-send">
+                    Enviar
+                </button>
+            </form>
         </main>
     </main>
 

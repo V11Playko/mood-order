@@ -104,10 +104,17 @@ header .icons  img {
     text-align: center;
 }
 /*boton generico*/
-.moods-button {
+.moods-input {
     border: 1px solid #47cfac;
     padding: 0.625rem 2.5rem;
     font-size: 0.875rem;
+}
+.button-send {
+    color: #cdd2da;
+    background-color: #2701ff;
+    display: block;
+    border-radius: 0.5rem;
+    width: 99%;
 }
 /*Para imagenes del post*/
 .moods-posts-container .post-container {
