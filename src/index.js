@@ -4,14 +4,15 @@ const path = require('path');
 const { getMaxListeners } = require('process');
 const app = express();
 
+
+/* It is expected to load the page so that the "ID" email can be accessed */
 if (typeof window === 'object') {
     // Check if document is finally loaded
        document.addEventListener("DOMContentLoaded", function () {
-            var correo = window.document.getElementById('correo');
+            var correo = window.document.getElementById("correo");
             alert('Finished loading')
          });
       }
-
 
 app.post("/send-email", (req, res) => {
     const transporter = nodemailer.createTransport({
@@ -29,7 +30,7 @@ app.post("/send-email", (req, res) => {
     });
     var mailOptions = {
         from: "Mood Order",
-        to:"heinnervega20@gmail.com",
+        to:"${}",
         subject: 'Enviado desde nodemailer',
         text: '!Hola, soy Mood Order!',
         html: '<body>Hello World?</body>',

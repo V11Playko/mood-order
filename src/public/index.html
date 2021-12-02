@@ -10,7 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" href="/assets/mood.png" type="image/x-icon">
 </head>
-<body  class="home-body">
+<body>
+    <!-- Header with the logo of the page and the icons of my social networks -->
     <header>
         <section   class="header-icons-container">
             <div class="icons">
@@ -25,7 +26,7 @@
             </div>
         </section>   
     </header>
-
+<!-- Container "MAIN" together with the main image about emotions -->
     <main class="main-container">
         <h1>Bienvenidos a Mood Order</h1>
         <section class="p-content-1">
@@ -44,12 +45,14 @@
             </section>
             <form action="/send-email" method="POST">
                 <section class="moods-posts-container">
-                    <div class="grid-container">   
+                    <div class="grid-container">  
+<!-- Due to lack of knowledge, it was not possible to access the "ID" from the index.js --> 
                         <h3>¿Cuál Quieres?</h3>
                         <p>Dime tu correo electronico:</p>
                         <div class="form-group">
                             <input id="correo" type="text" name="correo" placeholder="Correo">
                         </div>
+                        <!-- Package format to choose for sending messages -->
                             <article class="post-container">
                                 <img src="/assets/img/mood-happy.jpeg" alt="Imagen de un mood-feliz">
                                     <p>Feliz</p>
