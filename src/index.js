@@ -45,7 +45,6 @@ app.post("/send-email", (req, res) => {
     });
     /* However, note that this call only tests connection and authentication, but does not check whether the service allows you to use a specific sender address or not. */
 
-    
     transporter.sendMail(mailOptions, (error,info) => {
         if (error) {
             res.status(500).send(error.message);
