@@ -31,7 +31,7 @@ app.post("/send-email", (req, res) => {
     var mailOptions = {
         from: "Mood Order",
         //correo
-        to:`${}`,
+        to:`${h}`,
         subject: 'Enviado desde nodemailer',
         text: '!Hola, soy Mood Order!',
         html: '<body>Hello World?</body>',
