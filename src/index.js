@@ -1,13 +1,15 @@
 const nodemailer = require('nodemailer');
 const express = require('express');
 const path = require('path');
-const { getMaxListeners } = require('process');
 const app = express();
+const { getMaxListeners } = require('process');
+const { config } = require('./../config/config');
+// Mira esta clase de PLATZI para asi implementar mejor nodemailer y poder enviar los correos 
+// https://platzi.com/clases/2489-passport/41841-como-enviar-emails-con-nodejs/
 
-/* Mira esta clase de PLATZI para asi implementar mejor nodemailer y poder enviar los correos 
-https://platzi.com/clases/2489-passport/41841-como-enviar-emails-con-nodejs/
+const port = process.env.PORT || 3000;
 
-/* It is expected to load the page so that the "ID" email can be accessed */
+/*
 if (typeof window === 'object') {
     // Check if document is finally loaded
        document.addEventListener("DOMContentLoaded", function () {
@@ -15,15 +17,16 @@ if (typeof window === 'object') {
             alert('Finished loading')
          });
       }
+*/
 
 app.post("/send-email", (req, res) => {
     const transporter = nodemailer.createTransport({
-        host: 'smtp.ethereal.email',
-        port: 587,
-        secure: false, // upgrade later with STARTTLS
+        host: 'smtp.gmail.com',
+        secure: true, // upgrade later with STARTTLS
+        port: 465,
         auth: {
-            user: 'orlo.price5@ethereal.email',
-            pass: 'fRN5Kqrr56ak6hcRXA'
+            user: config.smtpEmail,
+            pass: config.smtpPassword
         },
         tls: {
             // do not fail on invalid certs
@@ -31,12 +34,13 @@ app.post("/send-email", (req, res) => {
         },
     });
     var mailOptions = {
-        from: "Mood Order",
+        from: config.smtpEmail,
         //correo
-        to:`${h}`,
-        subject: 'Enviado desde nodemailer',
+        // to:`${correo}`,
+        to:"heinnervega20@gmail.com",
+        subject: 'Correo de prueba de Mood-Order',
         text: '!Hola, soy Mood Order!',
-        html: '<body>Hello World?</body>',
+        html: '<body>!Hola, soy Mood Order!</body>',
     }
     // verify connection configuration
     transporter.verify(function (error, success) {
@@ -64,29 +68,6 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(3000, () => {
-    console.log("Servidor en -> http://localhost:3000")
+app.listen(port, () => {
+    console.log(`Servidor en -> http://localhost:${port}`)
 });
-/*
-
-const express = require('express');
-const app = express();
-const path = require('path');
-
-const nodemailer = require('nodemailer');
- 
-
-
-
-app.use(express.urlencoded({extended: false}));
-app.use(express.json());
-
-app.use(require('./routes/index'));
-
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.listen(3000, () => {
-    console.log('Server on port 3000');
-});
-
-*/
