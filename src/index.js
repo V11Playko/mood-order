@@ -4,6 +4,8 @@ const path = require('path');
 const { getMaxListeners } = require('process');
 const app = express();
 
+/* Mira esta clase de PLATZI para asi implementar mejor nodemailer y poder enviar los correos 
+https://platzi.com/clases/2489-passport/41841-como-enviar-emails-con-nodejs/
 
 /* It is expected to load the page so that the "ID" email can be accessed */
 if (typeof window === 'object') {
