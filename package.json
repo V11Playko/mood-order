@@ -4,6 +4,7 @@
   "description": "A website that sends you motivational emails depending on the ones you choose.",
   "main": "index.js",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "nodemailer": "^6.7.1",
     "path": "^0.12.7",
