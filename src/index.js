@@ -4,23 +4,21 @@ const path = require('path');
 const app = express();
 const { getMaxListeners } = require('process');
 const { config } = require('./../config/config');
-// Mira esta clase de PLATZI para asi implementar mejor nodemailer y poder enviar los correos 
-// https://platzi.com/clases/2489-passport/41841-como-enviar-emails-con-nodejs/
+
+/* En estos momentos el proyecto queda en espero ya que no encontre una forma de obtener el valor del input "correo" y al enviar el email me aparece el mensaje "No recipients defined"...  */
 
 const port = process.env.PORT || 3000;
 // Capture of the values of INPUTS
-function mostrar_inputs() {
-    let correo= document.getElementById("correo");
-}
-
-
 /*
+Esto es para traer el id del correo, se tiene que hacer eso supuestamente porque la ventana se carga antes que el DOM, por eso tiene que esperar.
+
+
 let correo;
 
 if (typeof window === 'object') {
     // Check if document is finally loaded
        document.addEventListener("DOMContentLoaded", function () {
-            correo = window.document.getElementById("correo");
+            correo = document.getElementById("correo").value;
             alert('Finished loading')
          });
       }
@@ -42,10 +40,11 @@ app.post("/send-email", (req, res) => {
     var mailOptions = {
         from: config.smtpEmail,
         //correo
-        to:`${correo}`,
+        //to:`${correo}`,
+        to: 'heinnervega20@gmail.com',
         subject: 'Correo de prueba de Mood-Order',
         text: '!Hola, soy Mood Order!',
-        html: '<body>!Hola,Prueba prueba!</body>',
+        html: '<body>!Hola,Yes!</body>',
     }
     // verify connection configuration
     transporter.verify(function (error, success) {
