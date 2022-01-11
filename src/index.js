@@ -8,7 +8,13 @@ const { config } = require('./../config/config');
 // https://platzi.com/clases/2489-passport/41841-como-enviar-emails-con-nodejs/
 
 const port = process.env.PORT || 3000;
+// Capture of the values of INPUTS
+function mostrar_inputs() {
+    let correo= document.getElementById("correo");
+}
 
+
+/*
 let correo;
 
 if (typeof window === 'object') {
@@ -18,7 +24,7 @@ if (typeof window === 'object') {
             alert('Finished loading')
          });
       }
-
+*/
 app.post("/send-email", (req, res) => {
     const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
