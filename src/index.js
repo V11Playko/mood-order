@@ -9,15 +9,15 @@ const { config } = require('./../config/config');
 
 const port = process.env.PORT || 3000;
 
-/*
+let correo;
+
 if (typeof window === 'object') {
     // Check if document is finally loaded
        document.addEventListener("DOMContentLoaded", function () {
-            var correo = window.document.getElementById("correo");
+            correo = window.document.getElementById("correo");
             alert('Finished loading')
          });
       }
-*/
 
 app.post("/send-email", (req, res) => {
     const transporter = nodemailer.createTransport({
@@ -36,11 +36,10 @@ app.post("/send-email", (req, res) => {
     var mailOptions = {
         from: config.smtpEmail,
         //correo
-        // to:`${correo}`,
-        to:"heinnervega20@gmail.com",
+        to:`${correo}`,
         subject: 'Correo de prueba de Mood-Order',
         text: '!Hola, soy Mood Order!',
-        html: '<body>!Hola, soy Mood Order!</body>',
+        html: '<body>!Hola,Prueba prueba!</body>',
     }
     // verify connection configuration
     transporter.verify(function (error, success) {
