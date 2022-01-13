@@ -6,7 +6,7 @@ const { getMaxListeners } = require('process');
 const { config } = require('./../config/config');
 
 /* En estos momentos el proyecto queda en espero ya que no encontre una forma de obtener el valor del input "correo" y al enviar el email me aparece el mensaje "No recipients defined"...  */
-
+//Prueba
 const port = process.env.PORT || 3000;
 // Capture of the values of INPUTS
 /*
