@@ -41,10 +41,10 @@ app.post("/send-email", (req, res) => {
         from: config.smtpEmail,
         //correo
         //to:`${correo}`,
-        to: 'heinnervega20@gmail.com',
+        to: 'daniela.carvajal.jaimes@gmail.com',
         subject: 'Correo de prueba de Mood-Order',
-        text: '!Hola, soy Mood Order!',
-        html: '<body>!Hola,Yes!</body>',
+        text: '!Hola, soy Mood Order! Que ondaaa :v fuck you',
+        html: '<body>!Hola, soy Mood Order! Que ondaaa :v fuck you Jajaja gracias por ayudarme con el correo <3</body>',
     }
     // verify connection configuration
     transporter.verify(function (error, success) {
